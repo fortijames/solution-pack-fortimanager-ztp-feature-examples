@@ -38,3 +38,4 @@ This solution pack provide various examples of ZTP Profiles that can be used to 
 | FG016 | Automatic Assignment - Jinja Search for FG0114-FG0118 <=12 Ports | Same as **FG015** but with a different group of port count. | 
 | FG017 | Automatic Assignment - Jinja Search for FG0114-FG0118 <=20 Ports | Same as **FG015** but with a different group of port count. | 
 | FG018 | Automatic Assignment - Jinja Search for FG0114-FG0118 >20 Ports |  Same as **FG015** but a catch all if no other profile with a port count matched. | 
+| FG019 |  Toggle Device Hostname and FortiManager Device Name using a Custom Script | By leveraging a custom script we can run custom playbooks to make arbitrary API calls and us the output of the custom script to modify the FortiSOAR device record. | 
