@@ -39,22 +39,22 @@
         ],
         "recordSets": [
             {
-                "name": null,
+                "name": "Attachments",
                 "apiName": "attachments",
                 "count": 3
             },
             {
-                "name": null,
+                "name": "Metafield Templates",
                 "apiName": "metafield_templates",
                 "count": 10
             },
             {
-                "name": null,
+                "name": "Scripts",
                 "apiName": "scripts",
                 "count": 7
             },
             {
-                "name": null,
+                "name": "ZTP Profiles",
                 "apiName": "z_t_p_profiles",
                 "count": 19
             }
