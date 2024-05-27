@@ -1,6 +1,11 @@
 [README](../README.md)
 
 # Change Log
+  - 20240416 (1.0.3)
+    - Update minVersion in info. 
+    - Update `Create Loopback - lo0 - DeviceDB`.
+    - Add new ZTP Profile FT019. 
+
   - 20231229 (1.0.2)
     - Update docs with usage examples
     - Update docs with ZTP Profile descriptions in content. 

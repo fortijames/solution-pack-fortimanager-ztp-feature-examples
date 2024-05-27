@@ -7,24 +7,42 @@
         "metafieldTemplate": "{\n  \"site_id\": \"{{record.devname|regex_replace('[^0-9]', '')|int}}\",\n  \"system_dns\": \"8.8.8.8\"\n}",
         "metadataSources": null,
         "zTPProfiles": [
-            "\/api\/3\/z_t_p_profiles\/5a9ba361-7fd9-496a-9f78-76ad16a650eb",
-            "\/api\/3\/z_t_p_profiles\/4d4e7dfd-9831-4078-8826-98ed6f63f9b9",
-            "\/api\/3\/z_t_p_profiles\/8c98bd29-b2a1-473b-aaee-d8dd18ffaa11",
-            "\/api\/3\/z_t_p_profiles\/6d5faf07-886a-4cab-9934-983d173c25d4",
+            "\/api\/3\/z_t_p_profiles\/dc5681ea-09c5-43e6-9c53-932edd54a3e4",
             "\/api\/3\/z_t_p_profiles\/0be5a9e5-d3db-4633-9b7a-bcf04b090df5",
             "\/api\/3\/z_t_p_profiles\/fc4818dc-3e74-4a6d-a190-ff5cce4eabd8",
             "\/api\/3\/z_t_p_profiles\/99b838a4-69ff-41d2-862c-94aea967a842",
             "\/api\/3\/z_t_p_profiles\/ccf57f5c-ba87-4938-be1d-51f94f6af4bd",
+            "\/api\/3\/z_t_p_profiles\/5a9ba361-7fd9-496a-9f78-76ad16a650eb",
+            "\/api\/3\/z_t_p_profiles\/6d5faf07-886a-4cab-9934-983d173c25d4",
             "\/api\/3\/z_t_p_profiles\/d5c36dd9-935d-4a15-be0c-3588c75910bf",
-            "\/api\/3\/z_t_p_profiles\/dc5681ea-09c5-43e6-9c53-932edd54a3e4",
             "\/api\/3\/z_t_p_profiles\/1ec909f6-082e-42e1-8441-e27407a2c56b",
+            "\/api\/3\/z_t_p_profiles\/8c98bd29-b2a1-473b-aaee-d8dd18ffaa11",
+            "\/api\/3\/z_t_p_profiles\/4d4e7dfd-9831-4078-8826-98ed6f63f9b9",
             "\/api\/3\/z_t_p_profiles\/0d699edf-bb43-4582-9015-4e51da0bfe00",
-            "\/api\/3\/z_t_p_profiles\/e8f6d0d8-5e9e-4c3a-9470-429c4bc64326",
-            "\/api\/3\/z_t_p_profiles\/ded225f0-1c18-4f6e-992a-c47809741e87",
+            "\/api\/3\/z_t_p_profiles\/53f2f971-ad79-4831-8d5f-bd1120ac47ba",
             "\/api\/3\/z_t_p_profiles\/cc16e60d-15ae-4fbb-8de9-b3aa8d3dcafb",
-            "\/api\/3\/z_t_p_profiles\/53f2f971-ad79-4831-8d5f-bd1120ac47ba"
+            "\/api\/3\/z_t_p_profiles\/ded225f0-1c18-4f6e-992a-c47809741e87",
+            "\/api\/3\/z_t_p_profiles\/e8f6d0d8-5e9e-4c3a-9470-429c4bc64326"
         ],
-        "devices": [],
+        "devices": [
+            "\/api\/3\/devices\/ee06d99c-6551-45b9-b239-7b29561fdea9",
+            "\/api\/3\/devices\/7ae1760a-b758-49c6-97db-4deb2fe477db",
+            "\/api\/3\/devices\/b2caa446-c61e-4e81-bb0b-1aacd49752c3",
+            "\/api\/3\/devices\/c426a362-1615-4fb8-b114-dc43d4bc7733",
+            "\/api\/3\/devices\/b4294377-0789-4aab-9f89-84e043d45adc",
+            "\/api\/3\/devices\/bc9bf812-adf6-4d9f-9e50-9ff88ad48c23",
+            "\/api\/3\/devices\/a753827a-2d93-47af-bedb-1b10866be6be",
+            "\/api\/3\/devices\/0bd4e8ed-76f6-4c60-96f3-728799995488",
+            "\/api\/3\/devices\/d1e07819-e5a1-464d-a9ea-7912f0ae958e",
+            "\/api\/3\/devices\/87e060e9-e940-4695-9603-044b639c2d49",
+            "\/api\/3\/devices\/3f1c13d0-91b0-4b0d-a78b-3dc0224b7e3f",
+            "\/api\/3\/devices\/2d6ff4c0-9c4e-4c8b-ab5a-90b09a4ab91f",
+            "\/api\/3\/devices\/3673b42a-6ac8-4ab8-b5c5-ad1a759751d8",
+            "\/api\/3\/devices\/31fe9cb9-6b43-4ac1-ae41-933eeac572e4",
+            "\/api\/3\/devices\/bd372900-cfd2-4256-9589-fbeca682890c",
+            "\/api\/3\/devices\/4569cd1d-a290-4480-b513-a240b9d1fcf5",
+            "\/api\/3\/devices\/b10dcc12-5f91-42aa-9578-87fe83dac737"
+        ],
         "scripts": [],
         "uuid": "b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
@@ -34,11 +52,36 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 11,
         "recordTags": [
             "FeatureTest",
             "ZTPF",
             "ZTPF-A.1"
+        ]
+    },
+    {
+        "@type": "MetafieldTemplate",
+        "orderPriority": 8,
+        "name": "Toggle Device TEST Hostname",
+        "description": "Toggle and device hostname with `-TEST` and put the value into the metafield `hostname`. ",
+        "metafieldTemplate": "{%- set meta = {} -%}\n{%- if \"TEST\" in record.devname -%}\n{%- set myhost = record.devname | regex_replace(\"-TEST\",\"\") -%}\n{%- else -%}\n{%- set myhost = record.devname + \"-TEST\" -%}\n{%- endif -%}\n{%- set _do = meta.update({\"hostname\":myhost}) -%}\n{{meta}}",
+        "metadataSources": null,
+        "zTPProfiles": [
+            "\/api\/3\/z_t_p_profiles\/a4d43aac-fb83-417b-9719-f0f4ec894f56"
+        ],
+        "devices": [
+            "\/api\/3\/devices\/8612047e-edbe-45ee-8ed7-5470ad6926ff"
+        ],
+        "scripts": [],
+        "uuid": "f4fcc1fa-0654-4d6d-89d8-3de1d5b1bb1f",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1712856806.529667,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1712857374.768802,
+        "owners": [
+            "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
+        ],
+        "recordTags": [
+            "FeatureTest"
         ]
     },
     {
@@ -51,7 +94,9 @@
         "zTPProfiles": [
             "\/api\/3\/z_t_p_profiles\/1ec909f6-082e-42e1-8441-e27407a2c56b"
         ],
-        "devices": [],
+        "devices": [
+            "\/api\/3\/devices\/4569cd1d-a290-4480-b513-a240b9d1fcf5"
+        ],
         "scripts": [],
         "uuid": "9ba426cd-205f-4ad2-8da7-347556338062",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
@@ -61,7 +106,6 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 12,
         "recordTags": [
             "FeatureTest"
         ]
@@ -76,7 +120,9 @@
         "zTPProfiles": [
             "\/api\/3\/z_t_p_profiles\/99b838a4-69ff-41d2-862c-94aea967a842"
         ],
-        "devices": [],
+        "devices": [
+            "\/api\/3\/devices\/b2caa446-c61e-4e81-bb0b-1aacd49752c3"
+        ],
         "scripts": [],
         "uuid": "445d3ab7-0844-46a2-b620-ee4896cf7026",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
@@ -86,7 +132,6 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 13,
         "recordTags": [
             "FeatureTest"
         ]
@@ -102,7 +147,10 @@
             "\/api\/3\/z_t_p_profiles\/dc5681ea-09c5-43e6-9c53-932edd54a3e4",
             "\/api\/3\/z_t_p_profiles\/d5c36dd9-935d-4a15-be0c-3588c75910bf"
         ],
-        "devices": [],
+        "devices": [
+            "\/api\/3\/devices\/7ae1760a-b758-49c6-97db-4deb2fe477db",
+            "\/api\/3\/devices\/b10dcc12-5f91-42aa-9578-87fe83dac737"
+        ],
         "scripts": [],
         "uuid": "26637a92-6bf7-4758-9b93-919f99881592",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
@@ -112,7 +160,6 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 14,
         "recordTags": [
             "FeatureTest"
         ]
@@ -128,7 +175,10 @@
             "\/api\/3\/z_t_p_profiles\/5a9ba361-7fd9-496a-9f78-76ad16a650eb",
             "\/api\/3\/z_t_p_profiles\/f8033f6f-54e8-4e62-ad2e-bc6f5688c509"
         ],
-        "devices": [],
+        "devices": [
+            "\/api\/3\/devices\/2d6ff4c0-9c4e-4c8b-ab5a-90b09a4ab91f",
+            "\/api\/3\/devices\/3673b42a-6ac8-4ab8-b5c5-ad1a759751d8"
+        ],
         "scripts": [],
         "uuid": "47f4c63a-e4ae-48e3-8133-4eefad31c19a",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
@@ -138,7 +188,6 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 15,
         "recordTags": [
             "FeatureTest"
         ]
@@ -153,7 +202,9 @@
         "zTPProfiles": [
             "\/api\/3\/z_t_p_profiles\/0be5a9e5-d3db-4633-9b7a-bcf04b090df5"
         ],
-        "devices": [],
+        "devices": [
+            "\/api\/3\/devices\/ee06d99c-6551-45b9-b239-7b29561fdea9"
+        ],
         "scripts": [],
         "uuid": "a2ad4f14-e0f0-42cf-9ad2-80d78b9f8901",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
@@ -163,7 +214,6 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 16,
         "recordTags": [
             "FeatureTest"
         ]
@@ -176,11 +226,14 @@
         "metafieldTemplate": "{\n  \"site_subnet\": \"{{'10.48.0.0\/12' | ipaddr('subnet') | ipsubnet(24,devmeta.site_id|int-1)}}\",\n  \"vlan_count\": \"4\",\n  \"vlan_cidr\": \"28\"\n}",
         "metadataSources": null,
         "zTPProfiles": [
+            "\/api\/3\/z_t_p_profiles\/6d5faf07-886a-4cab-9934-983d173c25d4",
             "\/api\/3\/z_t_p_profiles\/4d4e7dfd-9831-4078-8826-98ed6f63f9b9",
-            "\/api\/3\/z_t_p_profiles\/8c98bd29-b2a1-473b-aaee-d8dd18ffaa11",
-            "\/api\/3\/z_t_p_profiles\/6d5faf07-886a-4cab-9934-983d173c25d4"
+            "\/api\/3\/z_t_p_profiles\/8c98bd29-b2a1-473b-aaee-d8dd18ffaa11"
         ],
-        "devices": [],
+        "devices": [
+            "\/api\/3\/devices\/87e060e9-e940-4695-9603-044b639c2d49",
+            "\/api\/3\/devices\/3f1c13d0-91b0-4b0d-a78b-3dc0224b7e3f"
+        ],
         "scripts": [],
         "uuid": "e16ef483-59dd-4ca2-85d4-035779a18065",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
@@ -190,7 +243,6 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 17,
         "recordTags": [
             "FeatureTest"
         ]
@@ -203,12 +255,18 @@
         "metafieldTemplate": "{%- set ports = interfaces|json_query( '[?type == `physical`].name' ) -%}\n{%- set md = {} -%}\n{%- set _do = md.update({\n  \"port_count_phy\":ports | length\n}) -%}\n{{md}}",
         "metadataSources": "[\n  {\n    \"source_type\": \"fmg\",\n    \"source\": \"{{record.connector_config}}\",\n    \"keyname\": \"interfaces\",\n    \"location\": \"\/pm\/config\/device\/{{record.devname}}\/global\/system\/interface\"\n  }\n]",
         "zTPProfiles": [
-            "\/api\/3\/z_t_p_profiles\/e8f6d0d8-5e9e-4c3a-9470-429c4bc64326",
-            "\/api\/3\/z_t_p_profiles\/ded225f0-1c18-4f6e-992a-c47809741e87",
+            "\/api\/3\/z_t_p_profiles\/53f2f971-ad79-4831-8d5f-bd1120ac47ba",
             "\/api\/3\/z_t_p_profiles\/cc16e60d-15ae-4fbb-8de9-b3aa8d3dcafb",
-            "\/api\/3\/z_t_p_profiles\/53f2f971-ad79-4831-8d5f-bd1120ac47ba"
+            "\/api\/3\/z_t_p_profiles\/ded225f0-1c18-4f6e-992a-c47809741e87",
+            "\/api\/3\/z_t_p_profiles\/e8f6d0d8-5e9e-4c3a-9470-429c4bc64326"
         ],
-        "devices": [],
+        "devices": [
+            "\/api\/3\/devices\/c426a362-1615-4fb8-b114-dc43d4bc7733",
+            "\/api\/3\/devices\/b4294377-0789-4aab-9f89-84e043d45adc",
+            "\/api\/3\/devices\/bc9bf812-adf6-4d9f-9e50-9ff88ad48c23",
+            "\/api\/3\/devices\/a753827a-2d93-47af-bedb-1b10866be6be",
+            "\/api\/3\/devices\/0bd4e8ed-76f6-4c60-96f3-728799995488"
+        ],
         "scripts": [],
         "uuid": "dc2f4fb9-105d-4fe3-92f9-741a9527be1e",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
@@ -218,7 +276,6 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 18,
         "recordTags": [
             "FeatureTest"
         ]
@@ -234,7 +291,10 @@
             "\/api\/3\/z_t_p_profiles\/0be5a9e5-d3db-4633-9b7a-bcf04b090df5",
             "\/api\/3\/z_t_p_profiles\/d5c36dd9-935d-4a15-be0c-3588c75910bf"
         ],
-        "devices": [],
+        "devices": [
+            "\/api\/3\/devices\/ee06d99c-6551-45b9-b239-7b29561fdea9",
+            "\/api\/3\/devices\/7ae1760a-b758-49c6-97db-4deb2fe477db"
+        ],
         "scripts": [],
         "uuid": "fea4c527-c0b1-4c73-b06b-9634f89f36ea",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
@@ -244,7 +304,6 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 19,
         "recordTags": [
             "FeatureTest"
         ]

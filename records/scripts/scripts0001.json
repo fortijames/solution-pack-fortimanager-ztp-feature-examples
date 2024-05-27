@@ -1,6 +1,62 @@
 [
     {
         "@type": "Script",
+        "orderPriority": 10,
+        "scriptName": "Change Device Hostname from Metafield",
+        "description": " Run `set hostname` with the metafield value from`hostname`. ",
+        "script": "config system global\n    set hostname \"{{devmeta.hostname}}\"\nend",
+        "scriptMetadataSources": null,
+        "scriptType": "\/api\/3\/picklists\/8aa09b4c-49a1-4a8e-9b7a-0e19a4c0ca54",
+        "metafieldTemplates": [],
+        "devices": [
+            "\/api\/3\/devices\/8612047e-edbe-45ee-8ed7-5470ad6926ff"
+        ],
+        "managers": [],
+        "zTPProfiles": [
+            "\/api\/3\/z_t_p_profiles\/a4d43aac-fb83-417b-9719-f0f4ec894f56"
+        ],
+        "uuid": "7c6f82e3-1d9c-4b09-84ef-48d1ba9553dc",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1712857393.67877,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1712857458.536365,
+        "owners": [
+            "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
+        ],
+        "recordTags": [
+            "FeatureTest"
+        ]
+    },
+    {
+        "@type": "Script",
+        "orderPriority": 11,
+        "scriptName": "Change the FortiManager Devicename using the API in a Custom Playbook",
+        "description": null,
+        "script": "{%- set idx = {} -%}\n{%- set _do = idx.update({\n  \"record\": {\n    \"devname\": devmeta.hostname,\n    \"comment\": \"Changed \" + record.devname + \" to \" + devmeta.hostname + \".\"\n  }\n}) -%}\n{{idx}}",
+        "scriptMetadataSources": "[\n  {\n    \"source_type\": \"playbook\",\n    \"keyname\": \"change_devicename\",\n    \"playbook_id\": \"8c3be36d-6637-4d19-9724-80e2953f5e7c\",\n    \"argument\": {\n      \"fmg_config\": \"{{record.connector_config}}\",\n      \"name\": \"{{record.devname}}\",\n      \"newname\": \"{{devmeta.hostname}}\"\n    }\n  }\n]",
+        "scriptType": "\/api\/3\/picklists\/9b010b2b-91a5-4c83-aa0b-450008806da8",
+        "metafieldTemplates": [],
+        "devices": [
+            "\/api\/3\/devices\/8612047e-edbe-45ee-8ed7-5470ad6926ff"
+        ],
+        "managers": [],
+        "zTPProfiles": [
+            "\/api\/3\/z_t_p_profiles\/a4d43aac-fb83-417b-9719-f0f4ec894f56"
+        ],
+        "uuid": "c112cea9-2c8e-4ff9-8cf0-89d1dbe22f59",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1712857601.474415,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1712857783.87651,
+        "owners": [
+            "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
+        ],
+        "recordTags": [
+            "FeatureTest"
+        ]
+    },
+    {
+        "@type": "Script",
         "orderPriority": 51,
         "scriptName": "Create VLANs - DeviceDB",
         "description": "Script Template to create create VLANs on a Device DB using the metadata variables `site_subnet`, `vlan_count`, and `vlan_cidr`. ",
@@ -8,12 +64,15 @@
         "scriptMetadataSources": null,
         "scriptType": "\/api\/3\/picklists\/8aa09b4c-49a1-4a8e-9b7a-0e19a4c0ca54",
         "metafieldTemplates": [],
-        "devices": [],
+        "devices": [
+            "\/api\/3\/devices\/87e060e9-e940-4695-9603-044b639c2d49",
+            "\/api\/3\/devices\/3f1c13d0-91b0-4b0d-a78b-3dc0224b7e3f"
+        ],
         "managers": [],
         "zTPProfiles": [
+            "\/api\/3\/z_t_p_profiles\/6d5faf07-886a-4cab-9934-983d173c25d4",
             "\/api\/3\/z_t_p_profiles\/4d4e7dfd-9831-4078-8826-98ed6f63f9b9",
-            "\/api\/3\/z_t_p_profiles\/8c98bd29-b2a1-473b-aaee-d8dd18ffaa11",
-            "\/api\/3\/z_t_p_profiles\/6d5faf07-886a-4cab-9934-983d173c25d4"
+            "\/api\/3\/z_t_p_profiles\/8c98bd29-b2a1-473b-aaee-d8dd18ffaa11"
         ],
         "uuid": "c19290e3-6f13-4b30-8265-1a7bf2ed28b6",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
@@ -23,7 +82,6 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 6,
         "recordTags": [
             "FeatureTest"
         ]
@@ -48,7 +106,6 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 7,
         "recordTags": [
             "FeatureTest"
         ]
@@ -58,7 +115,7 @@
         "orderPriority": 100,
         "scriptName": "Create Loopback - lo0 - DeviceDB",
         "description": "Create a Loopback0 `lo0` via the `Config DB`. ",
-        "script": "config system interface\n  edit \"lo0\"\n    set type loopback\n    set vdom \"root\"\n    set allowaccess ping\n    set description \"Create lo0 for monitor test\"\n  next\nend",
+        "script": "config system interface\n  edit \"lo0\"\n    set type loopback\n    set vdom \"root\"\n    {%- if devmeta.loopback0_ip is defined %}\n    set ip {{devmeta.loopback0_ip}}\/32\n    {%- endif %}\n    set allowaccess ping\n    set description \"Create lo0 for monitor test\"\n  next\nend",
         "scriptMetadataSources": null,
         "scriptType": "\/api\/3\/picklists\/8aa09b4c-49a1-4a8e-9b7a-0e19a4c0ca54",
         "metafieldTemplates": [],
@@ -69,11 +126,10 @@
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
         "createDate": 1689101273.222667,
         "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
-        "modifyDate": 1689101273.222667,
+        "modifyDate": 1713295954.126113,
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 8,
         "recordTags": [
             "FeatureTest"
         ]
@@ -87,7 +143,10 @@
         "scriptMetadataSources": "[\n  {\n    \"source_type\": \"fmg\",\n    \"source\": \"{{record.connector_config}}\",\n    \"keyname\": \"interfaces\",\n    \"location\": \"\/pm\/config\/device\/{{record.devname}}\/global\/system\/interface\"\n  }\n]",
         "scriptType": "\/api\/3\/picklists\/9a16d4e5-fa62-42ee-9adb-74239923890e",
         "metafieldTemplates": [],
-        "devices": [],
+        "devices": [
+            "\/api\/3\/devices\/09359236-eb88-4962-97a4-d0b1a91894cc",
+            "\/api\/3\/devices\/87e060e9-e940-4695-9603-044b639c2d49"
+        ],
         "managers": [],
         "zTPProfiles": [
             "\/api\/3\/z_t_p_profiles\/8c98bd29-b2a1-473b-aaee-d8dd18ffaa11",
@@ -101,7 +160,6 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 9,
         "recordTags": [
             "FeatureTest"
         ]
@@ -115,13 +173,19 @@
         "scriptMetadataSources": "[\n  {\n    \"source_type\": \"fmg\",\n    \"source\": \"{{record.connector_config}}\",\n    \"keyname\": \"interfaces\",\n    \"location\": \"\/pm\/config\/device\/{{record.devname}}\/global\/system\/interface\"\n  }\n]",
         "scriptType": "\/api\/3\/picklists\/9a16d4e5-fa62-42ee-9adb-74239923890e",
         "metafieldTemplates": [],
-        "devices": [],
+        "devices": [
+            "\/api\/3\/devices\/c426a362-1615-4fb8-b114-dc43d4bc7733",
+            "\/api\/3\/devices\/b4294377-0789-4aab-9f89-84e043d45adc",
+            "\/api\/3\/devices\/bc9bf812-adf6-4d9f-9e50-9ff88ad48c23",
+            "\/api\/3\/devices\/a753827a-2d93-47af-bedb-1b10866be6be",
+            "\/api\/3\/devices\/0bd4e8ed-76f6-4c60-96f3-728799995488"
+        ],
         "managers": [],
         "zTPProfiles": [
-            "\/api\/3\/z_t_p_profiles\/e8f6d0d8-5e9e-4c3a-9470-429c4bc64326",
-            "\/api\/3\/z_t_p_profiles\/ded225f0-1c18-4f6e-992a-c47809741e87",
+            "\/api\/3\/z_t_p_profiles\/53f2f971-ad79-4831-8d5f-bd1120ac47ba",
             "\/api\/3\/z_t_p_profiles\/cc16e60d-15ae-4fbb-8de9-b3aa8d3dcafb",
-            "\/api\/3\/z_t_p_profiles\/53f2f971-ad79-4831-8d5f-bd1120ac47ba"
+            "\/api\/3\/z_t_p_profiles\/ded225f0-1c18-4f6e-992a-c47809741e87",
+            "\/api\/3\/z_t_p_profiles\/e8f6d0d8-5e9e-4c3a-9470-429c4bc64326"
         ],
         "uuid": "dfb4807a-4afa-43b9-87db-0651c5f9a3e7",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
@@ -131,7 +195,6 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 10,
         "recordTags": [
             "FeatureTest"
         ]
