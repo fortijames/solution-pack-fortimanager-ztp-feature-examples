@@ -8,9 +8,7 @@
         "scriptMetadataSources": null,
         "scriptType": "\/api\/3\/picklists\/8aa09b4c-49a1-4a8e-9b7a-0e19a4c0ca54",
         "metafieldTemplates": [],
-        "devices": [
-            "\/api\/3\/devices\/8cfc55e3-a56c-4b4a-becd-160b9a5069e6"
-        ],
+        "devices": [],
         "managers": [],
         "zTPProfiles": [
             "\/api\/3\/z_t_p_profiles\/a4d43aac-fb83-417b-9719-f0f4ec894f56"
@@ -36,9 +34,7 @@
         "scriptMetadataSources": "[\n  {\n    \"source_type\": \"playbook\",\n    \"keyname\": \"change_devicename\",\n    \"playbook_id\": \"8c3be36d-6637-4d19-9724-80e2953f5e7c\",\n    \"argument\": {\n      \"fmg_config\": \"{{record.connector_config}}\",\n      \"adom\":\"{{record.adom}}\",\n      \"name\": \"{{record.devname}}\",\n      \"newname\": \"{{devmeta.hostname}}\"\n    }\n  }\n]",
         "scriptType": "\/api\/3\/picklists\/9b010b2b-91a5-4c83-aa0b-450008806da8",
         "metafieldTemplates": [],
-        "devices": [
-            "\/api\/3\/devices\/8cfc55e3-a56c-4b4a-becd-160b9a5069e6"
-        ],
+        "devices": [],
         "managers": [],
         "zTPProfiles": [
             "\/api\/3\/z_t_p_profiles\/a4d43aac-fb83-417b-9719-f0f4ec894f56"
@@ -64,10 +60,7 @@
         "scriptMetadataSources": null,
         "scriptType": "\/api\/3\/picklists\/8aa09b4c-49a1-4a8e-9b7a-0e19a4c0ca54",
         "metafieldTemplates": [],
-        "devices": [
-            "\/api\/3\/devices\/fdb81643-0374-4bc5-9980-3c59819736a7",
-            "\/api\/3\/devices\/57c1a6a8-cc8d-4a7a-b820-18c9bfd74484"
-        ],
+        "devices": [],
         "managers": [],
         "zTPProfiles": [
             "\/api\/3\/z_t_p_profiles\/6d5faf07-886a-4cab-9934-983d173c25d4",
@@ -119,9 +112,7 @@
         "scriptMetadataSources": null,
         "scriptType": "\/api\/3\/picklists\/08bfc16f-8ddd-4da3-a1a2-0c95fc0d568f",
         "metafieldTemplates": [],
-        "devices": [
-            "\/api\/3\/devices\/5d87622a-79b4-4ec4-b410-5fd684c75c3a"
-        ],
+        "devices": [],
         "managers": [],
         "zTPProfiles": [
             "\/api\/3\/z_t_p_profiles\/e5247f4b-18cd-40fa-b163-ea85a5db6a18"
@@ -226,10 +217,7 @@
         "scriptMetadataSources": "[\n  {\n    \"source_type\": \"fmg\",\n    \"source\": \"{{record.connector_config}}\",\n    \"keyname\": \"interfaces\",\n    \"location\": \"\/pm\/config\/device\/{{record.devname}}\/global\/system\/interface\"\n  }\n]",
         "scriptType": "\/api\/3\/picklists\/9a16d4e5-fa62-42ee-9adb-74239923890e",
         "metafieldTemplates": [],
-        "devices": [
-            "\/api\/3\/devices\/e681bf01-5600-4f1e-a533-97f96e53c6c5",
-            "\/api\/3\/devices\/57c1a6a8-cc8d-4a7a-b820-18c9bfd74484"
-        ],
+        "devices": [],
         "managers": [],
         "zTPProfiles": [
             "\/api\/3\/z_t_p_profiles\/8c98bd29-b2a1-473b-aaee-d8dd18ffaa11",
@@ -256,12 +244,7 @@
         "scriptMetadataSources": "[\n  {\n    \"source_type\": \"fmg\",\n    \"source\": \"{{record.connector_config}}\",\n    \"keyname\": \"interfaces\",\n    \"location\": \"\/pm\/config\/device\/{{record.devname}}\/global\/system\/interface\"\n  }\n]",
         "scriptType": "\/api\/3\/picklists\/9a16d4e5-fa62-42ee-9adb-74239923890e",
         "metafieldTemplates": [],
-        "devices": [
-            "\/api\/3\/devices\/d38f8e25-72ed-471a-a485-35a15f15a3ce",
-            "\/api\/3\/devices\/39f6f65c-709b-4f89-a02d-d98958776cda",
-            "\/api\/3\/devices\/14f841ad-ce1a-4cce-9c0b-9915026baaa3",
-            "\/api\/3\/devices\/d8a6a147-b6ad-4a9d-acd2-ea95f9cb9cfe"
-        ],
+        "devices": [],
         "managers": [],
         "zTPProfiles": [
             "\/api\/3\/z_t_p_profiles\/53f2f971-ad79-4831-8d5f-bd1120ac47ba",

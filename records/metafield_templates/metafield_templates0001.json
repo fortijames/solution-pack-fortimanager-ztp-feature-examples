@@ -27,23 +27,7 @@
             "\/api\/3\/z_t_p_profiles\/ded225f0-1c18-4f6e-992a-c47809741e87",
             "\/api\/3\/z_t_p_profiles\/e8f6d0d8-5e9e-4c3a-9470-429c4bc64326"
         ],
-        "devices": [
-            "\/api\/3\/devices\/ff1b814f-6c4b-4068-8795-e24ad8fdd8f6",
-            "\/api\/3\/devices\/d38f8e25-72ed-471a-a485-35a15f15a3ce",
-            "\/api\/3\/devices\/39f6f65c-709b-4f89-a02d-d98958776cda",
-            "\/api\/3\/devices\/168a858a-63a0-408f-b6e0-ffade45ba579",
-            "\/api\/3\/devices\/f677ac71-c0da-4da0-9bcc-acb6f01e7716",
-            "\/api\/3\/devices\/fdb81643-0374-4bc5-9980-3c59819736a7",
-            "\/api\/3\/devices\/52864660-4ae7-44d4-b320-60b4b4012eeb",
-            "\/api\/3\/devices\/a255c8e2-f3c1-4794-b5b6-728e535582d5",
-            "\/api\/3\/devices\/9c79e914-a09f-474b-9ef5-17f34ecfbeb1",
-            "\/api\/3\/devices\/a91e6db8-61a6-4a5c-98d0-0ed67f0ce359",
-            "\/api\/3\/devices\/5d87622a-79b4-4ec4-b410-5fd684c75c3a",
-            "\/api\/3\/devices\/14f841ad-ce1a-4cce-9c0b-9915026baaa3",
-            "\/api\/3\/devices\/d8a6a147-b6ad-4a9d-acd2-ea95f9cb9cfe",
-            "\/api\/3\/devices\/cca7c708-ffdf-4fe4-887d-da9d097557ec",
-            "\/api\/3\/devices\/57c1a6a8-cc8d-4a7a-b820-18c9bfd74484"
-        ],
+        "devices": [],
         "scripts": [],
         "uuid": "b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
@@ -67,9 +51,7 @@
         "zTPProfiles": [
             "\/api\/3\/z_t_p_profiles\/a4d43aac-fb83-417b-9719-f0f4ec894f56"
         ],
-        "devices": [
-            "\/api\/3\/devices\/8cfc55e3-a56c-4b4a-becd-160b9a5069e6"
-        ],
+        "devices": [],
         "scripts": [],
         "uuid": "f4fcc1fa-0654-4d6d-89d8-3de1d5b1bb1f",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
@@ -93,9 +75,7 @@
         "zTPProfiles": [
             "\/api\/3\/z_t_p_profiles\/1ec909f6-082e-42e1-8441-e27407a2c56b"
         ],
-        "devices": [
-            "\/api\/3\/devices\/a255c8e2-f3c1-4794-b5b6-728e535582d5"
-        ],
+        "devices": [],
         "scripts": [],
         "uuid": "9ba426cd-205f-4ad2-8da7-347556338062",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
@@ -144,10 +124,7 @@
             "\/api\/3\/z_t_p_profiles\/dc5681ea-09c5-43e6-9c53-932edd54a3e4",
             "\/api\/3\/z_t_p_profiles\/d5c36dd9-935d-4a15-be0c-3588c75910bf"
         ],
-        "devices": [
-            "\/api\/3\/devices\/52864660-4ae7-44d4-b320-60b4b4012eeb",
-            "\/api\/3\/devices\/cca7c708-ffdf-4fe4-887d-da9d097557ec"
-        ],
+        "devices": [],
         "scripts": [],
         "uuid": "26637a92-6bf7-4758-9b93-919f99881592",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
@@ -172,10 +149,7 @@
             "\/api\/3\/z_t_p_profiles\/5a9ba361-7fd9-496a-9f78-76ad16a650eb",
             "\/api\/3\/z_t_p_profiles\/f8033f6f-54e8-4e62-ad2e-bc6f5688c509"
         ],
-        "devices": [
-            "\/api\/3\/devices\/168a858a-63a0-408f-b6e0-ffade45ba579",
-            "\/api\/3\/devices\/9c79e914-a09f-474b-9ef5-17f34ecfbeb1"
-        ],
+        "devices": [],
         "scripts": [],
         "uuid": "47f4c63a-e4ae-48e3-8133-4eefad31c19a",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
@@ -199,9 +173,7 @@
         "zTPProfiles": [
             "\/api\/3\/z_t_p_profiles\/0be5a9e5-d3db-4633-9b7a-bcf04b090df5"
         ],
-        "devices": [
-            "\/api\/3\/devices\/ff1b814f-6c4b-4068-8795-e24ad8fdd8f6"
-        ],
+        "devices": [],
         "scripts": [],
         "uuid": "a2ad4f14-e0f0-42cf-9ad2-80d78b9f8901",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
@@ -227,10 +199,7 @@
             "\/api\/3\/z_t_p_profiles\/4d4e7dfd-9831-4078-8826-98ed6f63f9b9",
             "\/api\/3\/z_t_p_profiles\/8c98bd29-b2a1-473b-aaee-d8dd18ffaa11"
         ],
-        "devices": [
-            "\/api\/3\/devices\/fdb81643-0374-4bc5-9980-3c59819736a7",
-            "\/api\/3\/devices\/57c1a6a8-cc8d-4a7a-b820-18c9bfd74484"
-        ],
+        "devices": [],
         "scripts": [],
         "uuid": "e16ef483-59dd-4ca2-85d4-035779a18065",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
@@ -257,12 +226,7 @@
             "\/api\/3\/z_t_p_profiles\/ded225f0-1c18-4f6e-992a-c47809741e87",
             "\/api\/3\/z_t_p_profiles\/e8f6d0d8-5e9e-4c3a-9470-429c4bc64326"
         ],
-        "devices": [
-            "\/api\/3\/devices\/d38f8e25-72ed-471a-a485-35a15f15a3ce",
-            "\/api\/3\/devices\/39f6f65c-709b-4f89-a02d-d98958776cda",
-            "\/api\/3\/devices\/14f841ad-ce1a-4cce-9c0b-9915026baaa3",
-            "\/api\/3\/devices\/d8a6a147-b6ad-4a9d-acd2-ea95f9cb9cfe"
-        ],
+        "devices": [],
         "scripts": [],
         "uuid": "dc2f4fb9-105d-4fe3-92f9-741a9527be1e",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
@@ -287,10 +251,7 @@
             "\/api\/3\/z_t_p_profiles\/0be5a9e5-d3db-4633-9b7a-bcf04b090df5",
             "\/api\/3\/z_t_p_profiles\/d5c36dd9-935d-4a15-be0c-3588c75910bf"
         ],
-        "devices": [
-            "\/api\/3\/devices\/ff1b814f-6c4b-4068-8795-e24ad8fdd8f6",
-            "\/api\/3\/devices\/cca7c708-ffdf-4fe4-887d-da9d097557ec"
-        ],
+        "devices": [],
         "scripts": [],
         "uuid": "fea4c527-c0b1-4c73-b06b-9634f89f36ea",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
