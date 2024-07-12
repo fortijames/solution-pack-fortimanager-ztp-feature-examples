@@ -1,6 +1,6 @@
 {
     "name": "fortiManagerZTPFlow-FeatureExamples",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "fsrMinCompatibility": "7.2.0",
     "type": "solutionpack",
     "local": true,
@@ -10,7 +10,7 @@
             "name": "fortiManagerZTPFlow",
             "type": "solutionpack",
             "label": "FortiManager ZTP Flow",
-            "minVersion": "1.0.3"
+            "minVersion": "1.0.4"
         }
     ],
     "prerequisite": null,
@@ -30,7 +30,7 @@
         "FortiManager",
         "ZTP"
     ],
-    "date": "2024-04-16T19:39:11+00:00",
+    "date": "2024-07-10T18:30:57+00:00",
     "contents": {
         "playbooks": [
             {
@@ -39,24 +39,24 @@
         ],
         "recordSets": [
             {
-                "name": "Attachments",
+                "name": null,
                 "apiName": "attachments",
                 "count": 3
             },
             {
-                "name": "Metafield Templates",
+                "name": null,
                 "apiName": "metafield_templates",
                 "count": 10
             },
             {
-                "name": "Scripts",
+                "name": null,
                 "apiName": "scripts",
-                "count": 7
+                "count": 10
             },
             {
-                "name": "ZTP Profiles",
+                "name": null,
                 "apiName": "z_t_p_profiles",
-                "count": 19
+                "count": 22
             }
         ]
     }
