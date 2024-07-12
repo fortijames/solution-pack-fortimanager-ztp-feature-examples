@@ -64,8 +64,8 @@
         "managers": [],
         "zTPProfiles": [
             "\/api\/3\/z_t_p_profiles\/6d5faf07-886a-4cab-9934-983d173c25d4",
-            "\/api\/3\/z_t_p_profiles\/4d4e7dfd-9831-4078-8826-98ed6f63f9b9",
-            "\/api\/3\/z_t_p_profiles\/8c98bd29-b2a1-473b-aaee-d8dd18ffaa11"
+            "\/api\/3\/z_t_p_profiles\/8c98bd29-b2a1-473b-aaee-d8dd18ffaa11",
+            "\/api\/3\/z_t_p_profiles\/4d4e7dfd-9831-4078-8826-98ed6f63f9b9"
         ],
         "uuid": "c19290e3-6f13-4b30-8265-1a7bf2ed28b6",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
@@ -220,8 +220,8 @@
         "devices": [],
         "managers": [],
         "zTPProfiles": [
-            "\/api\/3\/z_t_p_profiles\/8c98bd29-b2a1-473b-aaee-d8dd18ffaa11",
-            "\/api\/3\/z_t_p_profiles\/98a60ff3-acc0-401c-af19-bc53d0d5469b"
+            "\/api\/3\/z_t_p_profiles\/98a60ff3-acc0-401c-af19-bc53d0d5469b",
+            "\/api\/3\/z_t_p_profiles\/8c98bd29-b2a1-473b-aaee-d8dd18ffaa11"
         ],
         "uuid": "bcefa802-f8b4-49f4-b109-51862caf919b",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
@@ -247,10 +247,10 @@
         "devices": [],
         "managers": [],
         "zTPProfiles": [
-            "\/api\/3\/z_t_p_profiles\/53f2f971-ad79-4831-8d5f-bd1120ac47ba",
-            "\/api\/3\/z_t_p_profiles\/cc16e60d-15ae-4fbb-8de9-b3aa8d3dcafb",
+            "\/api\/3\/z_t_p_profiles\/e8f6d0d8-5e9e-4c3a-9470-429c4bc64326",
             "\/api\/3\/z_t_p_profiles\/ded225f0-1c18-4f6e-992a-c47809741e87",
-            "\/api\/3\/z_t_p_profiles\/e8f6d0d8-5e9e-4c3a-9470-429c4bc64326"
+            "\/api\/3\/z_t_p_profiles\/cc16e60d-15ae-4fbb-8de9-b3aa8d3dcafb",
+            "\/api\/3\/z_t_p_profiles\/53f2f971-ad79-4831-8d5f-bd1120ac47ba"
         ],
         "uuid": "dfb4807a-4afa-43b9-87db-0651c5f9a3e7",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
