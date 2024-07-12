@@ -30,7 +30,7 @@
             "\/api\/3\/metafield_templates\/26637a92-6bf7-4758-9b93-919f99881592"
         ],
         "devices": [
-            "\/api\/3\/devices\/14ae26b1-8752-4ac9-87eb-91549e462725"
+            "\/api\/3\/devices\/52864660-4ae7-44d4-b320-60b4b4012eeb"
         ],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
@@ -84,7 +84,7 @@
             "\/api\/3\/metafield_templates\/26637a92-6bf7-4758-9b93-919f99881592"
         ],
         "devices": [
-            "\/api\/3\/devices\/3b11acbf-0efb-4374-8387-f0155dc10af4"
+            "\/api\/3\/devices\/cca7c708-ffdf-4fe4-887d-da9d097557ec"
         ],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
@@ -138,7 +138,7 @@
             "\/api\/3\/metafield_templates\/9ba426cd-205f-4ad2-8da7-347556338062"
         ],
         "devices": [
-            "\/api\/3\/devices\/3d6c28ad-e379-41ef-ae2d-6c1d59177255"
+            "\/api\/3\/devices\/a255c8e2-f3c1-4794-b5b6-728e535582d5"
         ],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
@@ -193,7 +193,7 @@
             "\/api\/3\/metafield_templates\/fea4c527-c0b1-4c73-b06b-9634f89f36ea"
         ],
         "devices": [
-            "\/api\/3\/devices\/0663b22a-c181-4068-a4a2-64ab4fb97a41"
+            "\/api\/3\/devices\/ff1b814f-6c4b-4068-8795-e24ad8fdd8f6"
         ],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
@@ -246,7 +246,7 @@
             "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
         ],
         "devices": [
-            "\/api\/3\/devices\/23125f1d-3a36-4d59-9389-430d44014d3a"
+            "\/api\/3\/devices\/f677ac71-c0da-4da0-9bcc-acb6f01e7716"
         ],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
@@ -298,9 +298,7 @@
             "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97",
             "\/api\/3\/metafield_templates\/445d3ab7-0844-46a2-b620-ee4896cf7026"
         ],
-        "devices": [
-            "\/api\/3\/devices\/25d45c75-ec3f-4d47-955b-4f3d5760632d"
-        ],
+        "devices": [],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
         "assignmentSearchField": [
@@ -351,9 +349,7 @@
         "metafieldTemplates": [
             "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
         ],
-        "devices": [
-            "\/api\/3\/devices\/39217ef7-552b-47cc-bd65-ee802c088a9d"
-        ],
+        "devices": [],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
         "assignmentSearchField": [
@@ -406,8 +402,8 @@
             "\/api\/3\/metafield_templates\/47f4c63a-e4ae-48e3-8133-4eefad31c19a"
         ],
         "devices": [
-            "\/api\/3\/devices\/2da90704-35e8-4e7f-86dd-912e2a876cfb",
-            "\/api\/3\/devices\/401cebb7-da04-42de-87de-4092e9f091fa"
+            "\/api\/3\/devices\/168a858a-63a0-408f-b6e0-ffade45ba579",
+            "\/api\/3\/devices\/9c79e914-a09f-474b-9ef5-17f34ecfbeb1"
         ],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
@@ -515,7 +511,7 @@
             "\/api\/3\/metafield_templates\/e16ef483-59dd-4ca2-85d4-035779a18065"
         ],
         "devices": [
-            "\/api\/3\/devices\/6a67e4cd-c808-4481-af97-726c86f128ac"
+            "\/api\/3\/devices\/fdb81643-0374-4bc5-9980-3c59819736a7"
         ],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
@@ -572,7 +568,7 @@
             "\/api\/3\/metafield_templates\/e16ef483-59dd-4ca2-85d4-035779a18065"
         ],
         "devices": [
-            "\/api\/3\/devices\/02b98588-0518-45b4-84e2-82bc66c196bf"
+            "\/api\/3\/devices\/57c1a6a8-cc8d-4a7a-b820-18c9bfd74484"
         ],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
@@ -680,7 +676,7 @@
         ],
         "metafieldTemplates": [],
         "devices": [
-            "\/api\/3\/devices\/1c056d43-3bf2-4b61-92bf-b7f96a266b52"
+            "\/api\/3\/devices\/e681bf01-5600-4f1e-a533-97f96e53c6c5"
         ],
         "assignmentMode": "\/api\/3\/picklists\/36ca77e8-286f-4f66-8158-7ae978a2f1ee",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
@@ -730,7 +726,7 @@
             "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
         ],
         "devices": [
-            "\/api\/3\/devices\/90579abd-0525-4b1e-afba-1dd0880e5ac5"
+            "\/api\/3\/devices\/a91e6db8-61a6-4a5c-98d0-0ed67f0ce359"
         ],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/a0611652-03ae-4e5f-929a-3cc83a6df1ee",
@@ -787,7 +783,9 @@
             "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97",
             "\/api\/3\/metafield_templates\/dc2f4fb9-105d-4fe3-92f9-741a9527be1e"
         ],
-        "devices": [],
+        "devices": [
+            "\/api\/3\/devices\/d38f8e25-72ed-471a-a485-35a15f15a3ce"
+        ],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/1a2dbeff-3942-4284-97a7-01948ab6e6ed",
         "assignmentSearchField": [],
@@ -840,7 +838,8 @@
             "\/api\/3\/metafield_templates\/dc2f4fb9-105d-4fe3-92f9-741a9527be1e"
         ],
         "devices": [
-            "\/api\/3\/devices\/e24ea614-4ef4-4de2-88a1-799513a00718"
+            "\/api\/3\/devices\/14f841ad-ce1a-4cce-9c0b-9915026baaa3",
+            "\/api\/3\/devices\/d8a6a147-b6ad-4a9d-acd2-ea95f9cb9cfe"
         ],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/1a2dbeff-3942-4284-97a7-01948ab6e6ed",
@@ -946,10 +945,7 @@
             "\/api\/3\/metafield_templates\/dc2f4fb9-105d-4fe3-92f9-741a9527be1e"
         ],
         "devices": [
-            "\/api\/3\/devices\/28802f71-b07b-4ad8-996c-32ffe8306487",
-            "\/api\/3\/devices\/11171b12-0fe1-4e0c-bc69-8500121638e2",
-            "\/api\/3\/devices\/4d083c42-fc1a-4375-8aab-871a957b4ca2",
-            "\/api\/3\/devices\/df0480c6-b297-4689-9fa0-4857988fc00c"
+            "\/api\/3\/devices\/39f6f65c-709b-4f89-a02d-d98958776cda"
         ],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/1a2dbeff-3942-4284-97a7-01948ab6e6ed",
@@ -1003,7 +999,7 @@
             "\/api\/3\/metafield_templates\/f4fcc1fa-0654-4d6d-89d8-3de1d5b1bb1f"
         ],
         "devices": [
-            "\/api\/3\/devices\/1d851bcd-d33c-4202-aee5-e81c42503cb2"
+            "\/api\/3\/devices\/8cfc55e3-a56c-4b4a-becd-160b9a5069e6"
         ],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
@@ -1059,9 +1055,7 @@
         "metafieldTemplates": [
             "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
         ],
-        "devices": [
-            "\/api\/3\/devices\/0d5194d6-f969-47ed-81e7-0e69fab62890"
-        ],
+        "devices": [],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
         "assignmentSearchField": [
@@ -1164,7 +1158,7 @@
             "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
         ],
         "devices": [
-            "\/api\/3\/devices\/afa445fd-e55c-4011-92f5-da107276e4f8"
+            "\/api\/3\/devices\/5d87622a-79b4-4ec4-b410-5fd684c75c3a"
         ],
         "assignmentMode": "\/api\/3\/picklists\/36ca77e8-286f-4f66-8158-7ae978a2f1ee",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",

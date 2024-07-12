@@ -9,7 +9,7 @@
         "scriptType": "\/api\/3\/picklists\/8aa09b4c-49a1-4a8e-9b7a-0e19a4c0ca54",
         "metafieldTemplates": [],
         "devices": [
-            "\/api\/3\/devices\/1d851bcd-d33c-4202-aee5-e81c42503cb2"
+            "\/api\/3\/devices\/8cfc55e3-a56c-4b4a-becd-160b9a5069e6"
         ],
         "managers": [],
         "zTPProfiles": [
@@ -37,7 +37,7 @@
         "scriptType": "\/api\/3\/picklists\/9b010b2b-91a5-4c83-aa0b-450008806da8",
         "metafieldTemplates": [],
         "devices": [
-            "\/api\/3\/devices\/1d851bcd-d33c-4202-aee5-e81c42503cb2"
+            "\/api\/3\/devices\/8cfc55e3-a56c-4b4a-becd-160b9a5069e6"
         ],
         "managers": [],
         "zTPProfiles": [
@@ -65,8 +65,8 @@
         "scriptType": "\/api\/3\/picklists\/8aa09b4c-49a1-4a8e-9b7a-0e19a4c0ca54",
         "metafieldTemplates": [],
         "devices": [
-            "\/api\/3\/devices\/02b98588-0518-45b4-84e2-82bc66c196bf",
-            "\/api\/3\/devices\/6a67e4cd-c808-4481-af97-726c86f128ac"
+            "\/api\/3\/devices\/fdb81643-0374-4bc5-9980-3c59819736a7",
+            "\/api\/3\/devices\/57c1a6a8-cc8d-4a7a-b820-18c9bfd74484"
         ],
         "managers": [],
         "zTPProfiles": [
@@ -120,7 +120,7 @@
         "scriptType": "\/api\/3\/picklists\/08bfc16f-8ddd-4da3-a1a2-0c95fc0d568f",
         "metafieldTemplates": [],
         "devices": [
-            "\/api\/3\/devices\/afa445fd-e55c-4011-92f5-da107276e4f8"
+            "\/api\/3\/devices\/5d87622a-79b4-4ec4-b410-5fd684c75c3a"
         ],
         "managers": [],
         "zTPProfiles": [
@@ -148,9 +148,7 @@
         "scriptMetadataSources": null,
         "scriptType": "\/api\/3\/picklists\/0ba56e71-9b78-4076-95c0-4cd877809646",
         "metafieldTemplates": [],
-        "devices": [
-            "\/api\/3\/devices\/0d5194d6-f969-47ed-81e7-0e69fab62890"
-        ],
+        "devices": [],
         "managers": [],
         "zTPProfiles": [
             "\/api\/3\/z_t_p_profiles\/31c8a02d-6c59-4dbe-a42f-22baa95065d0"
@@ -177,9 +175,7 @@
         "scriptMetadataSources": null,
         "scriptType": "\/api\/3\/picklists\/d2190e91-0f13-4053-8be6-f6b3b077bb6a",
         "metafieldTemplates": [],
-        "devices": [
-            "\/api\/3\/devices\/0d5194d6-f969-47ed-81e7-0e69fab62890"
-        ],
+        "devices": [],
         "managers": [],
         "zTPProfiles": [
             "\/api\/3\/z_t_p_profiles\/31c8a02d-6c59-4dbe-a42f-22baa95065d0"
@@ -201,7 +197,7 @@
         "@type": "Script",
         "orderPriority": 100,
         "scriptName": "Create Loopback - lo0 - DeviceDB",
-        "description": "Create a Loopback0 `lo0` via the `Config DB`. ",
+        "description": "Create a Loopback0 `lo0` via the `Config DB`. \nOptionally configure an IP Address only if the metadata `loopback0_ip` exists. ",
         "script": "config system interface\n  edit \"lo0\"\n    set type loopback\n    set vdom \"root\"\n    {%- if devmeta.loopback0_ip is defined and devmeta.loopback0_ip != '' %}\n    set ip {{devmeta.loopback0_ip}}\/32\n    {%- endif %}\n    set allowaccess ping\n    set description \"Create lo0 for monitor test\"\n  next\nend",
         "scriptMetadataSources": null,
         "scriptType": "\/api\/3\/picklists\/8aa09b4c-49a1-4a8e-9b7a-0e19a4c0ca54",
@@ -213,7 +209,7 @@
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
         "createDate": 1689101273.222667,
         "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
-        "modifyDate": 1719342619.783563,
+        "modifyDate": 1720807047.65009,
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
@@ -231,8 +227,8 @@
         "scriptType": "\/api\/3\/picklists\/9a16d4e5-fa62-42ee-9adb-74239923890e",
         "metafieldTemplates": [],
         "devices": [
-            "\/api\/3\/devices\/1c056d43-3bf2-4b61-92bf-b7f96a266b52",
-            "\/api\/3\/devices\/02b98588-0518-45b4-84e2-82bc66c196bf"
+            "\/api\/3\/devices\/e681bf01-5600-4f1e-a533-97f96e53c6c5",
+            "\/api\/3\/devices\/57c1a6a8-cc8d-4a7a-b820-18c9bfd74484"
         ],
         "managers": [],
         "zTPProfiles": [
@@ -261,11 +257,10 @@
         "scriptType": "\/api\/3\/picklists\/9a16d4e5-fa62-42ee-9adb-74239923890e",
         "metafieldTemplates": [],
         "devices": [
-            "\/api\/3\/devices\/28802f71-b07b-4ad8-996c-32ffe8306487",
-            "\/api\/3\/devices\/11171b12-0fe1-4e0c-bc69-8500121638e2",
-            "\/api\/3\/devices\/4d083c42-fc1a-4375-8aab-871a957b4ca2",
-            "\/api\/3\/devices\/df0480c6-b297-4689-9fa0-4857988fc00c",
-            "\/api\/3\/devices\/e24ea614-4ef4-4de2-88a1-799513a00718"
+            "\/api\/3\/devices\/d38f8e25-72ed-471a-a485-35a15f15a3ce",
+            "\/api\/3\/devices\/39f6f65c-709b-4f89-a02d-d98958776cda",
+            "\/api\/3\/devices\/14f841ad-ce1a-4cce-9c0b-9915026baaa3",
+            "\/api\/3\/devices\/d8a6a147-b6ad-4a9d-acd2-ea95f9cb9cfe"
         ],
         "managers": [],
         "zTPProfiles": [
