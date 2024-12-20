@@ -1,6 +1,9 @@
 [README](../README.md)
 
 # Change Log
+  - 20240913-20241220 (1.0.5)
+    - Update Examples to match ZTP Release 1.0.5
+
   - 20240416 (1.0.3)
     - Update minVersion in info. 
     - Update `Create Loopback - lo0 - DeviceDB`.
